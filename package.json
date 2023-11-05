@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev | pino-pretty",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nitropack": "latest",
+    "pino": "^8.16.1",
+    "prisma": "^5.5.2"
+  },
+  "devDependencies": {
+    "pino-pretty": "^10.2.3"
+  }
+}
