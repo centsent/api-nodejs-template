@@ -4,14 +4,21 @@
     "prepare": "nitropack prepare",
     "dev": "nitropack dev | pino-pretty",
     "build": "nitropack build",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "up": "taze major -I",
+    "db:studio": "drizzle-kit studio",
+    "db:pull": "drizzle-kit introspect"
   },
   "dependencies": {
+    "drizzle-orm": "^0.30.10",
     "nitropack": "latest",
-    "pino": "^8.16.1",
-    "prisma": "^5.5.2"
+    "pino": "^9.1.0"
   },
   "devDependencies": {
-    "pino-pretty": "^10.2.3"
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.21.2",
+    "mysql2": "^3.9.7",
+    "pino-pretty": "^11.0.0",
+    "taze": "^0.13.8"
   }
 }
